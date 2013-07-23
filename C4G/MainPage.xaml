@@ -54,6 +54,8 @@
         </Grid>-->
 
         <!--Panorama control-->
+        <ProgressBar x:Name="DownloadProgress" IsIndeterminate="True" Margin="0,10,0,0" Visibility="Visible" Background="{StaticResource PhoneForegroundBrush}" VerticalAlignment="Top"/>
+
         <phone:Panorama Foreground="Black" TitleTemplate="{StaticResource SmallPanoramaTitle}" Title="Check-in for Good">
 
             <phone:PanoramaItem Header="featured" Orientation="Horizontal" Foreground="Black">

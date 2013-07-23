@@ -6,13 +6,16 @@
     xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
     xmlns:sys="clr-namespace:System;assembly=mscorlib"
     xmlns:local="clr-namespace:C4G.Resources"
-    xmlns:data="clr-namespace:C4G.DataModels">
+    xmlns:data="clr-namespace:C4G.DataModels"
+    xmlns:h="clr-namespace:C4G.Helpers">
 
     <!--Application Resources-->
     <Application.Resources>
 
         <!--For Images_DataModel class to be used on MainPage for ListBox-->
         <data:Images_DataModel x:Key="imagesCollection" />
+
+        <h:MultiResImageChooserUri x:Key="MultiResImageChooser"/>
 
         <!--Panorama Title-->
         <DataTemplate x:Key="SmallPanoramaTitle">
