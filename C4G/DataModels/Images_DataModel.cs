@@ -5,12 +5,13 @@ using C4G.Models;
 using C4G.WebServices;
 using System.Net;
 using Newtonsoft.Json;
+using C4G.Helpers;
 
 namespace C4G.DataModels
 {
     public class Images_DataModel : List<ImageData>
     {
-        public ObservableCollection<ImageData> DataCollection { get; set; }
+        public static ObservableCollection<ImageData> DataCollection { get; set; }
 
         public Images_DataModel()
         {
@@ -35,17 +36,22 @@ namespace C4G.DataModels
 
         public void httpCall()
         {
-            WebClient webClient = new WebClient();
-            webClient.DownloadStringCompleted += new DownloadStringCompletedEventHandler(webClient_DownloadStringCompleted);
-            webClient.DownloadStringAsync(new Uri("http://192.168.10.192:3000/catagories/get_data.json?device=1x"));
+            NetworkAdapter adapter = new NetworkAdapter();
+            adapter.openHttpCall(WSUrl.BASE_URL);
         }
 
-        private void webClient_DownloadStringCompleted(object sender, DownloadStringCompletedEventArgs e)
+        public static void getResponce(String responce)
         {
-            var rootObject = JsonConvert.DeserializeObject<RootObject>(e.Result);
-            foreach (var blog in rootObject.catagories)
+            try
             {
-                DataCollection.Add(new ImageData(new Uri("http://192.168.10.192:3000" + blog.image, UriKind.RelativeOrAbsolute), "Rahul"));
+                var rootObject = JsonConvert.DeserializeObject<RootAuthenticate>(responce);
+                foreach (var blog in rootObject.catagories)
+                {
+                    DataCollection.Add(new ImageData(new Uri(WSUrl.BASE_URL_IMAGES + blog.image, UriKind.RelativeOrAbsolute), "Rahul"));
+                }
+            }
+            catch (Exception)
+            {
             }
         }
     }

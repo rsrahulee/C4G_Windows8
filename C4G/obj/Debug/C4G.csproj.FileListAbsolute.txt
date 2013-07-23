@@ -1,8 +1,3 @@
-C:\Users\RahulWebo\documents\visual studio 2012\Projects\C4G\C4G\obj\Debug\App.g.cs
-C:\Users\RahulWebo\documents\visual studio 2012\Projects\C4G\C4G\obj\Debug\MainPage.g.cs
-C:\Users\RahulWebo\documents\visual studio 2012\Projects\C4G\C4G\obj\Debug\C4G.g.resources
-C:\Users\RahulWebo\documents\visual studio 2012\Projects\C4G\C4G\obj\Debug\C4G.Resources.AppResources.resources
-C:\Users\RahulWebo\documents\visual studio 2012\Projects\C4G\C4G\obj\Debug\C4G.csproj.GenerateResource.Cache
 C:\Users\RahulWebo\documents\visual studio 2012\Projects\C4G\C4G\Bin\Debug\Assets\ApplicationIcon.png
 C:\Users\RahulWebo\documents\visual studio 2012\Projects\C4G\C4G\Bin\Debug\Assets\Tiles\FlipCycleTileLarge.png
 C:\Users\RahulWebo\documents\visual studio 2012\Projects\C4G\C4G\Bin\Debug\Assets\Tiles\FlipCycleTileMedium.png
@@ -41,7 +36,11 @@ C:\Users\RahulWebo\documents\visual studio 2012\Projects\C4G\C4G\Bin\Debug\ru-RU
 C:\Users\RahulWebo\documents\visual studio 2012\Projects\C4G\C4G\Bin\Debug\sv-SE\Microsoft.Phone.Controls.Toolkit.resources.dll
 C:\Users\RahulWebo\documents\visual studio 2012\Projects\C4G\C4G\Bin\Debug\zh-CN\Microsoft.Phone.Controls.Toolkit.resources.dll
 C:\Users\RahulWebo\documents\visual studio 2012\Projects\C4G\C4G\Bin\Debug\zh-TW\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\RahulWebo\documents\visual studio 2012\Projects\C4G\C4G\obj\Debug\App.g.cs
+C:\Users\RahulWebo\documents\visual studio 2012\Projects\C4G\C4G\obj\Debug\MainPage.g.cs
+C:\Users\RahulWebo\documents\visual studio 2012\Projects\C4G\C4G\obj\Debug\C4G.g.resources
+C:\Users\RahulWebo\documents\visual studio 2012\Projects\C4G\C4G\obj\Debug\C4G.Resources.AppResources.resources
+C:\Users\RahulWebo\documents\visual studio 2012\Projects\C4G\C4G\obj\Debug\C4G.csproj.GenerateResource.Cache
 C:\Users\RahulWebo\documents\visual studio 2012\Projects\C4G\C4G\obj\Debug\C4G.dll
 C:\Users\RahulWebo\documents\visual studio 2012\Projects\C4G\C4G\obj\Debug\C4G.pdb
 C:\Users\RahulWebo\documents\visual studio 2012\Projects\C4G\C4G\obj\Debug\XapCacheFile.xml
-C:\Users\RahulWebo\documents\visual studio 2012\Projects\C4G\C4G\obj\Debug\C4G.csprojResolveAssemblyReference.cache
