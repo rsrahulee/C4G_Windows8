@@ -1,6 +1,9 @@
 ﻿using C4G.DataModels;
+using C4G.Helpers;
 using System;
+using System.IO;
 using System.Net;
+using System.Text;
 
 namespace C4G.WebServices
 {
@@ -17,9 +20,9 @@ namespace C4G.WebServices
         //private void SendTokenEndpointRequest(IAsyncResult rez)
         //{
         //    HttpWebRequest hwr = rez.AsyncState as HttpWebRequest;
-        //    //byte[] bodyBits = Encoding.UTF8.GetBytes(string.Format("grant_type=authorization_code&code={0}&client_id={1}&redirect_uri={2}",app.Code,app.ClientID,HttpUtility.UrlEncode(app.RedirectUri)));
+        //    byte[] bodyBits = Encoding.UTF8.GetBytes(string.Format("grant_type=authorization_code&code={0}&client_id={1}&redirect_uri={2}", app.Code, app.ClientID, HttpUtility.UrlEncode(app.RedirectUri)));
         //    Stream st = hwr.EndGetRequestStream(rez);
-        //    //st.Write(bodyBits, 0, bodyBits.Length);
+        //    st.Write(bodyBits, 0, bodyBits.Length);
         //    st.Close();
         //    hwr.BeginGetResponse(new AsyncCallback(RetrieveTokenEndpointResponse), hwr);
         //}
@@ -74,7 +77,30 @@ namespace C4G.WebServices
 
         private void httpCallCompleted(object sender, DownloadStringCompletedEventArgs e)
         {
-            Images_DataModel.getResponce(e.Result.ToString());
+            switch (Constants.fromWhereCalled)
+            {
+                case 0:
+                    MainPage.getResponce(e.Result.ToString());
+                    break;
+                case 1:
+                    Images_DataModel.getResponce(e.Result.ToString());
+                    break;
+            }
+        }
+
+        public void SendPost(Uri uri)
+        {
+            var webClient = new WebClient();
+
+            //webClient.Headers[HttpRequestHeader.ContentType] = "application/json";
+            webClient.UploadStringCompleted += this.sendPostCompleted;
+            webClient.UploadStringAsync(uri, WSUrl.PARAMS);
+        }
+
+        private void sendPostCompleted(object sender, UploadStringCompletedEventArgs e)
+        {
+            // Handle result
+            Console.WriteLine("HTTP POST Result: {0}", e.Result);
         }
     }
 

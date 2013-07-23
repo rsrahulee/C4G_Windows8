@@ -5,6 +5,11 @@ using System.Windows.Controls.Primitives;
 using C4G.View;
 using System.ComponentModel;
 using System.Threading;
+using C4G.WebServices;
+using C4G.Helpers;
+using System;
+using Newtonsoft.Json;
+using C4G.Models;
 
 namespace C4G
 {
@@ -16,6 +21,7 @@ namespace C4G
         {
             InitializeComponent();
 
+            Constants.fromWhereCalled = WSFromWhereCalled.fromLoginPage;
             showPopup();
             StartLoadingData();
 
@@ -60,7 +66,35 @@ namespace C4G
         {
             // Do some data loading on a background
             // We'll just sleep for the demo
-            Thread.Sleep(5000);
+            //Thread.Sleep(5000);
+            httpCall();
+        }
+
+        public void httpCall()
+        {
+            NetworkAdapter adapter = new NetworkAdapter();
+            //adapter.openHttpCall(WSUrl.LOGIN_URL);
+            adapter.SendPost(new Uri(WSUrl.LOGIN_URL));
+        }
+
+        public static void getResponce(String responce)
+        {
+            try
+            {
+                var rootObject = JsonConvert.DeserializeObject<Login>(responce);
+                if (rootObject.login.Equals("true"))
+                {
+                    String strApiKey = rootObject.api_key;
+                }
+                else
+                {
+                    CustomMessageBox box = new CustomMessageBox();
+                    box.Show();
+                }
+            }
+            catch (Exception)
+            {
+            }
         }
     }
 }

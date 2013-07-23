@@ -16,7 +16,8 @@ namespace C4G.DataModels
 
         public Images_DataModel()
         {
-            httpCall();
+            Constants.fromWhereCalled = WSFromWhereCalled.fromFeaturedCampaigns;
+            //httpCall();
             BuildCollection();
         }
 
@@ -48,10 +49,10 @@ namespace C4G.DataModels
                 var rootObject = JsonConvert.DeserializeObject<RootAuthenticate>(responce);
                 foreach (var blog in rootObject.catagories)
                 {
-                    DataCollection.Add(new ImageData(new Uri(WSUrl.BASE_URL_IMAGES + blog.image, UriKind.RelativeOrAbsolute), "Rahul"));                    
+                    DataCollection.Add(new ImageData(new Uri(WSUrl.BASE_URL_IMAGES + blog.image, UriKind.RelativeOrAbsolute), "Rahul"));
                 }
                 //Dismiss ProgressBar
-                var progressBar = UIHelper.FindChild<ProgressBar>(Application.Current.RootVisual, "DownloadProgress");                
+                var progressBar = UIHelper.FindChild<ProgressBar>(Application.Current.RootVisual, "DownloadProgress");
                 progressBar.Visibility = Visibility.Collapsed;
                 progressBar.IsEnabled = false;
             }

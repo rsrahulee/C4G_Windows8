@@ -8,7 +8,7 @@
     FontSize="{StaticResource PhoneFontSizeNormal}"
     Foreground="{StaticResource PhoneForegroundBrush}">
 
-    <Grid x:Name="LayoutRoot" Width="Auto" Height="Auto" Margin="0" VerticalAlignment="Center" HorizontalAlignment="Center">
-        <Image Source="{Binding BestResolutionImage, Source={StaticResource MultiResImageChooser}}" Stretch="Fill"/>
+    <Grid x:Name="LayoutRoot" Width="Auto" Height="Auto" Margin="0" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+        <Image Source="{Binding BestResolutionImage, Source={StaticResource MultiResImageChooser}}" Stretch="Fill" VerticalAlignment="Stretch"/>
     </Grid>
 </UserControl>

@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace C4G.Helpers
 {
-    class Constants
+    class WSFromWhereCalled
     {
-        public static int fromWhereCalled = 0;
+        public static int fromLoginPage = 0;
+        public static int fromFeaturedCampaigns = 1;
     }
 }
