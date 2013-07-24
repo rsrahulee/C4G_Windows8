@@ -1,5 +1,5 @@
-﻿<xapCache source="C:\Users\RahulWebo\documents\visual studio 2012\Projects\C4G\C4G\Bin\Debug\C4G_Debug_AnyCPU.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="7/23/2013 7:26:58 PM">
-  <file source="C:\Users\RahulWebo\documents\visual studio 2012\Projects\C4G\C4G\obj\Debug\C4G.dll" archivePath="C4G.dll" lastWriteTime="7/23/2013 7:26:56 PM" />
+﻿<xapCache source="C:\Users\RahulWebo\documents\visual studio 2012\Projects\C4G\C4G\Bin\Debug\C4G_Debug_AnyCPU.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="7/24/2013 6:57:12 PM">
+  <file source="C:\Users\RahulWebo\documents\visual studio 2012\Projects\C4G\C4G\obj\Debug\C4G.dll" archivePath="C4G.dll" lastWriteTime="7/24/2013 6:57:11 PM" />
   <file source="C:\Users\RahulWebo\documents\visual studio 2012\Projects\C4G\C4G\Assets\loading.93.png" archivePath="Assets\loading.93.png" lastWriteTime="7/23/2013 4:11:13 PM" />
   <file source="C:\Users\RahulWebo\documents\visual studio 2012\Projects\C4G\C4G\Assets\loading.png" archivePath="Assets\loading.png" lastWriteTime="7/23/2013 4:10:04 PM" />
   <file source="C:\Users\RahulWebo\documents\visual studio 2012\Projects\C4G\C4G\Images\add.png" archivePath="Images\add.png" lastWriteTime="7/19/2013 12:07:11 PM" />
@@ -53,12 +53,12 @@
   <file source="C:\Users\RahulWebo\documents\visual studio 2012\Projects\C4G\C4G\Assets\Tiles\FlipCycleTileSmall.png" archivePath="Assets\Tiles\FlipCycleTileSmall.png" lastWriteTime="7/16/2013 5:39:39 PM" />
   <file source="C:\Users\RahulWebo\documents\visual studio 2012\Projects\C4G\C4G\Assets\Tiles\IconicTileMediumLarge.png" archivePath="Assets\Tiles\IconicTileMediumLarge.png" lastWriteTime="7/16/2013 5:39:39 PM" />
   <file source="C:\Users\RahulWebo\documents\visual studio 2012\Projects\C4G\C4G\Assets\Tiles\IconicTileSmall.png" archivePath="Assets\Tiles\IconicTileSmall.png" lastWriteTime="7/16/2013 5:39:39 PM" />
-  <file source="C:\Users\RahulWebo\documents\visual studio 2012\Projects\C4G\C4G\Bin\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="7/23/2013 3:09:09 PM" />
+  <file source="C:\Users\RahulWebo\documents\visual studio 2012\Projects\C4G\C4G\Bin\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="7/24/2013 6:39:42 PM" />
   <file source="C:\Users\RahulWebo\documents\visual studio 2012\Projects\C4G\C4G\Bin\Debug\Assets\ApplicationIcon.png" archivePath="Assets\ApplicationIcon.png" lastWriteTime="7/16/2013 5:39:39 PM" />
   <file source="C:\Users\RahulWebo\documents\visual studio 2012\Projects\C4G\C4G\Bin\Debug\Assets\Tiles\FlipCycleTileMedium.png" archivePath="Assets\Tiles\FlipCycleTileMedium.png" lastWriteTime="7/16/2013 5:39:39 PM" />
   <file source="C:\Users\RahulWebo\documents\visual studio 2012\Projects\C4G\packages\WPToolkit.4.2013.06.11\lib\sl4-windowsphone71\Microsoft.Phone.Controls.Toolkit.dll" archivePath="Microsoft.Phone.Controls.Toolkit.dll" lastWriteTime="7/22/2013 12:15:02 PM" />
   <file source="C:\Users\RahulWebo\Downloads\Compressed\Json45r9\Bin\WindowsPhone\Signed\Newtonsoft.Json.dll" archivePath="Newtonsoft.Json.dll" lastWriteTime="9/8/2012 3:00:40 AM" />
   <file source="C:\Program Files (x86)\Microsoft SDKs\Windows Phone\v8.0\Libraries\Microsoft.Phone.Controls.dll" archivePath="Microsoft.Phone.Controls.dll" lastWriteTime="3/3/2013 7:40:38 PM" />
   <file source="C:\Users\RahulWebo\Downloads\Compressed\Json45r9\Bin\WindowsPhone\Signed\Newtonsoft.Json.xml" archivePath="Newtonsoft.Json.xml" lastWriteTime="9/8/2012 3:00:40 AM" />
-  <file source="C:\Users\RahulWebo\documents\visual studio 2012\Projects\C4G\C4G\Bin\Debug\Properties\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="7/23/2013 3:09:09 PM" />
+  <file source="C:\Users\RahulWebo\documents\visual studio 2012\Projects\C4G\C4G\Bin\Debug\Properties\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="7/24/2013 6:39:42 PM" />
 </xapCache>

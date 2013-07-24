@@ -4,6 +4,9 @@ C:\Users\RahulWebo\documents\visual studio 2012\Projects\C4G\C4G\Bin\Debug\Asset
 C:\Users\RahulWebo\documents\visual studio 2012\Projects\C4G\C4G\Bin\Debug\Assets\Tiles\FlipCycleTileSmall.png
 C:\Users\RahulWebo\documents\visual studio 2012\Projects\C4G\C4G\Bin\Debug\Assets\Tiles\IconicTileMediumLarge.png
 C:\Users\RahulWebo\documents\visual studio 2012\Projects\C4G\C4G\Bin\Debug\Assets\Tiles\IconicTileSmall.png
+C:\Users\RahulWebo\documents\visual studio 2012\Projects\C4G\C4G\Bin\Debug\Assets\Splash_720.png
+C:\Users\RahulWebo\documents\visual studio 2012\Projects\C4G\C4G\Bin\Debug\Assets\Splash_wvga.png
+C:\Users\RahulWebo\documents\visual studio 2012\Projects\C4G\C4G\Bin\Debug\Assets\Splash_wxga.png
 C:\Users\RahulWebo\documents\visual studio 2012\Projects\C4G\C4G\Bin\Debug\C4G.dll
 C:\Users\RahulWebo\documents\visual studio 2012\Projects\C4G\C4G\Bin\Debug\C4G.pdb
 C:\Users\RahulWebo\documents\visual studio 2012\Projects\C4G\C4G\Bin\Debug\AppManifest.xaml
@@ -38,6 +41,7 @@ C:\Users\RahulWebo\documents\visual studio 2012\Projects\C4G\C4G\Bin\Debug\zh-CN
 C:\Users\RahulWebo\documents\visual studio 2012\Projects\C4G\C4G\Bin\Debug\zh-TW\Microsoft.Phone.Controls.Toolkit.resources.dll
 C:\Users\RahulWebo\documents\visual studio 2012\Projects\C4G\C4G\obj\Debug\App.g.cs
 C:\Users\RahulWebo\documents\visual studio 2012\Projects\C4G\C4G\obj\Debug\MainPage.g.cs
+C:\Users\RahulWebo\documents\visual studio 2012\Projects\C4G\C4G\obj\Debug\View\LoginPage.g.cs
 C:\Users\RahulWebo\documents\visual studio 2012\Projects\C4G\C4G\obj\Debug\View\SplashScreen.g.cs
 C:\Users\RahulWebo\documents\visual studio 2012\Projects\C4G\C4G\obj\Debug\C4G.g.resources
 C:\Users\RahulWebo\documents\visual studio 2012\Projects\C4G\C4G\obj\Debug\C4G.Resources.AppResources.resources
@@ -45,7 +49,3 @@ C:\Users\RahulWebo\documents\visual studio 2012\Projects\C4G\C4G\obj\Debug\C4G.c
 C:\Users\RahulWebo\documents\visual studio 2012\Projects\C4G\C4G\obj\Debug\C4G.dll
 C:\Users\RahulWebo\documents\visual studio 2012\Projects\C4G\C4G\obj\Debug\C4G.pdb
 C:\Users\RahulWebo\documents\visual studio 2012\Projects\C4G\C4G\obj\Debug\XapCacheFile.xml
-C:\Users\RahulWebo\documents\visual studio 2012\Projects\C4G\C4G\obj\Debug\C4G.csprojResolveAssemblyReference.cache
-C:\Users\RahulWebo\documents\visual studio 2012\Projects\C4G\C4G\Bin\Debug\Assets\Splash_720.png
-C:\Users\RahulWebo\documents\visual studio 2012\Projects\C4G\C4G\Bin\Debug\Assets\Splash_wvga.png
-C:\Users\RahulWebo\documents\visual studio 2012\Projects\C4G\C4G\Bin\Debug\Assets\Splash_wxga.png

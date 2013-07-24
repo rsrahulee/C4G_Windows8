@@ -1,14 +1,36 @@
 ﻿using C4G.DataModels;
 using C4G.Helpers;
+using C4G.Models;
+using C4G.View;
+using Newtonsoft.Json;
 using System;
 using System.IO;
 using System.Net;
 using System.Text;
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Navigation;
 
 namespace C4G.WebServices
 {
     class NetworkAdapter
     {
+        WSInterface my_lstn;
+
+        public void SendPost(Uri uri, String param, WSInterface lstn)
+        {
+            this.my_lstn = lstn;
+            var webClient = new WebClient();
+            webClient.UploadStringCompleted += this.sendPostCompleted;
+            webClient.UploadStringAsync(uri, param);
+        }
+
+        private void sendPostCompleted(object sender, UploadStringCompletedEventArgs e)
+        {
+            Console.WriteLine("HTTP POST Result: {0}", e.Result);
+            this.my_lstn.CallWS_POST(e.Result);
+        }
+
         //public void GetToken()
         //{
         //    HttpWebRequest hwr = WebRequest.Create(new Uri("http://192.168.10.192:3000/catagories/get_data.json?device=1x")) as HttpWebRequest;
@@ -77,30 +99,15 @@ namespace C4G.WebServices
 
         private void httpCallCompleted(object sender, DownloadStringCompletedEventArgs e)
         {
-            switch (Constants.fromWhereCalled)
-            {
-                case 0:
-                    MainPage.getResponce(e.Result.ToString());
-                    break;
-                case 1:
-                    Images_DataModel.getResponce(e.Result.ToString());
-                    break;
-            }
-        }
-
-        public void SendPost(Uri uri)
-        {
-            var webClient = new WebClient();
-
-            //webClient.Headers[HttpRequestHeader.ContentType] = "application/json";
-            webClient.UploadStringCompleted += this.sendPostCompleted;
-            webClient.UploadStringAsync(uri, WSUrl.PARAMS);
-        }
-
-        private void sendPostCompleted(object sender, UploadStringCompletedEventArgs e)
-        {
-            // Handle result
-            Console.WriteLine("HTTP POST Result: {0}", e.Result);
+            //switch (Constants.fromWhereCalled)
+            //{
+            //    case 0:
+            //        MainPage.getResponce(e.Result.ToString());
+            //        break;
+            //    case 1:
+            //        Images_DataModel.getResponce(e.Result.ToString());
+            //        break;
+            //}
         }
     }
 

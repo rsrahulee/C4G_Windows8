@@ -22,8 +22,8 @@ namespace C4G
             InitializeComponent();
 
             Constants.fromWhereCalled = WSFromWhereCalled.fromLoginPage;
-            showPopup();
-            StartLoadingData();
+            //showPopup();
+            //StartLoadingData();
 
             // Set the data context of the listbox control to the sample data
             //DataContext = App.ViewModel;
@@ -38,63 +38,62 @@ namespace C4G
             //}
         }
 
-        private void showPopup()
-        {
-            popup = new Popup();
-            popup.Child = new SplashScreen();
-            popup.IsOpen = true;
-        }
+        //private void showPopup()
+        //{
+        //    popup = new Popup();
+        //    popup.Child = new SplashScreen();
+        //    popup.IsOpen = true;
+        //}
 
-        private void StartLoadingData()
-        {
-            BackgroundWorker backroungWorker = new BackgroundWorker();
-            backroungWorker.DoWork += new DoWorkEventHandler(backroungWorker_DoWork);
-            backroungWorker.RunWorkerCompleted += new RunWorkerCompletedEventHandler(backroungWorker_RunWorkerCompleted);
-            backroungWorker.RunWorkerAsync();
-        }
+        //private void StartLoadingData()
+        //{
+        //    BackgroundWorker backroungWorker = new BackgroundWorker();
+        //    backroungWorker.DoWork += new DoWorkEventHandler(backroungWorker_DoWork);
+        //    backroungWorker.RunWorkerCompleted += new RunWorkerCompletedEventHandler(backroungWorker_RunWorkerCompleted);
+        //    backroungWorker.RunWorkerAsync();
+        //}
 
-        void backroungWorker_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
-        {
-            this.Dispatcher.BeginInvoke(() =>
-            {
-                this.popup.IsOpen = false;
-            }
-            );
-        }
+        //void backroungWorker_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
+        //{
+        //    this.Dispatcher.BeginInvoke(() =>
+        //    {
+        //        this.popup.IsOpen = false;
+        //    });
+        //}
 
-        void backroungWorker_DoWork(object sender, DoWorkEventArgs e)
-        {
-            // Do some data loading on a background
-            // We'll just sleep for the demo
-            //Thread.Sleep(5000);
-            httpCall();
-        }
+        //void backroungWorker_DoWork(object sender, DoWorkEventArgs e)
+        //{
+        //    // Do some data loading on a background
+        //    // We'll just sleep for the demo
+        //    Thread.Sleep(2000);
+        //    httpCall();
+        //}
 
-        public void httpCall()
-        {
-            NetworkAdapter adapter = new NetworkAdapter();
-            //adapter.openHttpCall(WSUrl.LOGIN_URL);
-            adapter.SendPost(new Uri(WSUrl.LOGIN_URL));
-        }
+        //public void httpCall()
+        //{
+        //    NetworkAdapter adapter = new NetworkAdapter();
+        //    //adapter.openHttpCall(WSUrl.LOGIN_URL);
+        //    adapter.SendPost(new Uri(WSUrl.LOGIN_URL), WSUrl.PARAMS);
+        //}
 
-        public static void getResponce(String responce)
-        {
-            try
-            {
-                var rootObject = JsonConvert.DeserializeObject<Login>(responce);
-                if (rootObject.login.Equals("true"))
-                {
-                    String strApiKey = rootObject.api_key;
-                }
-                else
-                {
-                    CustomMessageBox box = new CustomMessageBox();
-                    box.Show();
-                }
-            }
-            catch (Exception)
-            {
-            }
-        }
+        //public static void getResponce(String responce)
+        //{
+        //    try
+        //    {
+        //        var rootObject = JsonConvert.DeserializeObject<Login>(responce);
+        //        if (rootObject.login.Equals("True"))
+        //        {
+        //            String strApiKey = rootObject.api_key;
+        //        }
+        //        else
+        //        {
+        //            CustomMessageBox box = new CustomMessageBox();
+        //            box.Show();
+        //        }
+        //    }
+        //    catch (Exception)
+        //    {
+        //    }
+        //}
     }
 }
